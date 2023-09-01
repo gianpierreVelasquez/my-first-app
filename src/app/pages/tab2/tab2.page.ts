@@ -55,6 +55,6 @@ export class Tab2Page {
   }
 
   private _initialMapOptions(map: L.Map) {
-    L.tileLayer(environment.Leaflet_BaseMap_Url).addTo(map);
+    L.tileLayer(environment.baseMapUrl).addTo(map);
   }
 }

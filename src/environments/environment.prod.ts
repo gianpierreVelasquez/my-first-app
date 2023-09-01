@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  Leaflet_BaseMap_Url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
+  baseMapUrl: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+  baseUrl: 'https://d0a7-181-65-1-181.ngrok-free.app/api.pre.iwalk/'
 };
