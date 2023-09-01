@@ -1,0 +1,28 @@
+<ion-content>
+  <div class="form-container">
+    <form [formGroup]="loginForm"
+          (ngSubmit)="submitLogin(loginForm)">
+      <ion-item>
+        <ion-input label="Email"
+                   labelPlacement="floating"
+                   formControlName="email"
+                   placeholder="Enter email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Password"
+                   labelPlacement="floating"
+                   formControlName="password"
+                   placeholder="Enter password"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit"
+                      expand="block">Iniciar Sesion</ion-button>
+          <ion-button type="submit"
+                      expand="block"
+                      (click)="goToHome()">Entrar como invitado</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>
